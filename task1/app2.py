@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/api')
 def api():
-    response = requests.get('https://api.example.com/data')
+    response = requests.get('https://random-data-api.com/api/v2/users')
     return jsonify(response.json())
 
 
